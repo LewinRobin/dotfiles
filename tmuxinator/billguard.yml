@@ -1,0 +1,27 @@
+name: BillGuard
+root: /mnt/E/codefile/ReactNative/BillGuard
+windows:
+  - nvim:
+      layout: main-pane
+      panes:
+        - nvim .
+  - frontend:
+      layout: main-pane
+      panes:
+        - cd frontend && npm run web
+  - backend:
+      layout: main-pane
+      panes:
+        - cd backend && source .venv/bin/activate && docker compose up -d db redis && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+  - backendtests:
+      layout: main-pane
+      panes:
+        - cd backend && source .venv/bin/activate && PYTHONPATH=. pytest tests/ -v
+  - celery:
+      layout: main-pane
+      panes:
+        - cd backend && source .venv/bin/activate && celery -A app.workers.celery_app worker --loglevel=info
+  - opencode:
+      layout: main-pane
+      panes:
+        - opencode -s ses_2467673c6ffeqJ9vT3o3xsh6p5

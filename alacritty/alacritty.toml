@@ -1,0 +1,19 @@
+[window]
+startup_mode = "Fullscreen"
+# Options: "Windowed", "Maximized", "Fullscreen", "SimpleFullscreen"
+opacity = 0.7
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
+
+# Optional: Adjust the cursor color to match
+[colors.cursor]
+text = '#000000'
+cursor = '#ffffff'
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+style = "Regular"

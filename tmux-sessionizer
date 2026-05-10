@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# 1. Select the folder
+if [[ $# -eq 1 ]]; then
+    selected="$1"
+else
+    selected=$(fdfind . /mnt/E/codefile --min-depth 1 --type d | fzf)
+fi
+
+if [[ -z "$selected" ]]; then
+    exit 0
+fi
+
+selected_name=$(basename "$selected" | tr ' . ' '_')
+tmux_running=$(pgrep tmux)
+
+# --- THE FIX: FORCE UTF-8 ENVIRONMENT ---
+# This ensures even if the system locale is shaky, tmux knows to use UTF-8
+export LC_ALL=en_IN.UTF-8 
+export LANG=en_IN.UTF-8
+
+# 2. Logic to handle "Outside" vs "Inside" Tmux
+if [[ -z "$TMUX" ]] && [[ -z "$tmux_running" ]]; then
+    # Added -u flag to force Unicode
+    tmux -u new-session -s "$selected_name" -c "$selected"
+    exit 0
+fi
+
+if ! tmux has-session -t="$selected_name" 2> /dev/null; then
+    # Added -u flag and explicitly pass environment variables
+    tmux -u new-session -ds "$selected_name" -c "$selected" -e "LC_ALL=en_IN.UTF-8" -e "LANG=en_IN.UTF-8"
+fi
+
+# 3. The Critical Switch
+if [[ -z "$TMUX" ]]; then
+    tmux -u attach-session -t "$selected_name"
+else
+    tmux switch-client -t "$selected_name"
+fi

@@ -1,0 +1,21 @@
+name: ProductCustomizationSystem
+root: /mnt/E/codefile/React/Hosted/ProductCustomizationSystem/
+windows:
+  - nvim:
+      layout: main-pane
+      panes:
+        - nvim .
+  - frontend:
+      layout: main-pane
+      panes:
+        - cd frontend && npm run dev
+  - backend:
+      layout: main-pane
+      panes:
+        - cd backend && source venv/bin/activate && python manage.py runserver
+  - celery:
+      layout: main-pane
+      panes:
+        - cd backend && source venv/bin/activate && docker rm -f redis && docker
+          run -d --name redis -p 6379:6379 redis:alpine && celery -A backend
+          worker -l info

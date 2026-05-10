@@ -1,0 +1,11 @@
+[Default Applications]
+x-scheme-handler/http=xfce4-web-browser.desktop
+x-scheme-handler/https=xfce4-web-browser.desktop
+
+[Added Associations]
+x-scheme-handler/http=xfce4-web-browser.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;
+application/pdf=org.kde.okular.desktop;
+text/html=firefox-esr.desktop;vim.desktop;com.brave.Browser.desktop;
+image/png=display-im7.q16.desktop;org.xfce.ristretto.desktop;
+application/x-zerosize=org.xfce.ristretto.desktop;

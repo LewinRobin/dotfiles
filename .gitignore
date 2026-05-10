@@ -1,0 +1,33 @@
+# --- Privacy & Sensitive Data ---
+emaildefaults
+emailidentities
+github-copilot/
+libaccounts-glib/
+kalarmrc
+
+# --- Heavy App Data & Caches ---
+# These are usually bulky and don't contain manual configs
+akonadi/
+blender/
+GIMP/
+inkscape/
+libreoffice/
+vlc/
+pulse/
+session/
+dconf/
+
+# --- Development & Temp Files ---
+.git/
+Code/
+*.tmp
+*.log
+.netrwhist
+
+# --- App Specific States ---
+quodlibet/
+simple-scan/
+xarchiver/
+xfburn/
+pavucontrol.ini
+user-dirs.locale
