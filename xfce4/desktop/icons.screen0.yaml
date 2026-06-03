@@ -22,10 +22,10 @@ configs:
     "/home/lewin":
       row: 0
       col: 0
-    "0EF28275F28260B7":
+    "58A3-649F":
       row: 4
       col: 0
-      last_seen: 1776440699164797
+      last_seen: 1778163552089112
     "2026-03-14-11-58-05-00":
       row: 3
       col: 0
@@ -37,10 +37,10 @@ configs:
       row: 3
       col: 0
       last_seen: 1778150903629956
-    "58A3-649F":
+    "0EF28275F28260B7":
       row: 4
       col: 0
-      last_seen: 1778163552089112
+      last_seen: 1776440699164797
     "C298879E98879019":
       row: 3
       col: 0

@@ -1,3 +1,4 @@
-configuration {
-    modi: "window,drun,filebrowser,run";
-}
+// configuration {
+//     modi: "window,drun,filebrowser,run";
+// }
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"

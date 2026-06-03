@@ -1,4 +1,4 @@
-Command=/home/lewin/system_stats.sh
+Command=/home/lewin/.config/system_stats.sh
 UseLabel=1
 Text=
 UpdatePeriod=1000

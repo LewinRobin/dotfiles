@@ -207,3 +207,14 @@ fo() {
     xdg-open "$file" > /dev/null 2>&1
   fi
 }
+va() {
+    if [ -d ".venv" ]; then
+        echo "Activating .venv..."
+        source .venv/bin/activate
+    elif [ -d "venv" ]; then
+        echo "Activating venv..."
+        source venv/bin/activate
+    else
+        echo "No .venv or venv directory found in the current folder."
+    fi
+}

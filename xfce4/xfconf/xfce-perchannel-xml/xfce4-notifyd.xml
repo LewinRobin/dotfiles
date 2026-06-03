@@ -5,6 +5,7 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="blueman"/>
+      <value type="string" value="brave-browser"/>
       <value type="string" value="hplip"/>
       <value type="string" value="io.github.alarm-clock-applet"/>
       <value type="string" value="notify-send"/>

@@ -1,9 +1,9 @@
 [window]
 startup_mode = "Fullscreen"
 # Options: "Windowed", "Maximized", "Fullscreen", "SimpleFullscreen"
-opacity = 0.7
+# opacity = 0.85
 [colors.primary]
-background = '#000000'
+background = '#1E1E1E'
 foreground = '#ffffff'
 
 # Optional: Adjust the cursor color to match
@@ -17,3 +17,7 @@ size = 14.0
 [font.normal]
 family = "CaskaydiaCove Nerd Font"
 style = "Regular"
+
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"

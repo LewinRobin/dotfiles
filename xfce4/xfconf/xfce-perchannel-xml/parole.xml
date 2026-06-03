@@ -5,12 +5,12 @@
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/mnt/E/Computer Science/Programming Videos/Flutter/Flutter Tutorial"/>
+    <property name="last-used-media" type="string" value="/mnt/E/Computer Science/Infosys Programing Sessions"/>
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="true"/>
-    <property name="width" type="int" value="760"/>
-    <property name="height" type="int" value="420"/>
+    <property name="width" type="int" value="1920"/>
+    <property name="height" type="int" value="1056"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="100"/>
