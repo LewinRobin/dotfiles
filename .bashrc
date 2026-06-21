@@ -218,3 +218,4 @@ va() {
         echo "No .venv or venv directory found in the current folder."
     fi
 }
+export OPENCODE_EXPERIMENTAL_LSP_TOOL=true

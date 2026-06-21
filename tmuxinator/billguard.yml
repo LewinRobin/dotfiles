@@ -8,11 +8,11 @@ windows:
   - frontend:
       layout: main-pane
       panes:
-        - cd frontend && npm run web
+        - cd frontend && npx expo start --web
   - backend:
       layout: main-pane
       panes:
-        - cd backend && source .venv/bin/activate && docker compose up -d db redis && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+        - cd backend && docker compose up -d db redis && source .venv/bin/activate && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
   - backendtests:
       layout: main-pane
       panes:
@@ -24,4 +24,4 @@ windows:
   - opencode:
       layout: main-pane
       panes:
-        - opencode -s ses_2467673c6ffeqJ9vT3o3xsh6p5
+        - opencode -s ses_1198b93a1ffeaH3ewtz1BG4V3t

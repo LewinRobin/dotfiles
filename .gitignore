@@ -31,4 +31,17 @@ xarchiver/
 xfburn/
 pavucontrol.ini
 user-dirs.locale
-opencode/
+
+
+# XFCE Desktop icon coordinates and hardware tracking
+xfce4/desktop/icons.screen0.yaml
+
+# Qalculate history and timestamps
+qalculate/
+
+# XFCE volatile state files (history, UI column sizes, specific wallpaper paths)
+xfce4/xfconf/xfce-perchannel-xml/parole.xml
+xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": true,
+  "permission": {
+    "read": {
+      "*": "allow",
+      "*.env": "ask",
+      "*.env.*": "ask"
+    },
+    "glob": "allow",
+    "grep": "allow",
+    "lsp": "allow",
+    "skill": "allow",
+    "websearch": "allow",
+    "edit": {
+      "package-lock.json": "allow",
+      "pnpm-lock.yaml": "allow",
+      "yarn.lock": "allow",
+      "*": "ask"
+    },
+    "bash": {
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "npm test*": "allow",
+      "npm run test*": "allow",
+      "cargo test*": "allow",
+      "pytest*": "allow",
+      "rm -rf *": "ask",
+      "sudo *": "ask",
+      "*": "ask"
+    },
+    "task": "ask",
+    "webfetch": "ask",
+    "external_directory": "ask",
+    "doom_loop": "ask"
+  }
+}
