@@ -1,13 +1,31 @@
 [Default Applications]
-x-scheme-handler/http=xfce4-web-browser.desktop
-x-scheme-handler/https=xfce4-web-browser.desktop
+x-scheme-handler/http=firefox-esr.desktop
+x-scheme-handler/https=firefox-esr.desktop
 x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+x-scheme-handler/chrome=firefox-esr.desktop
+text/html=firefox-esr.desktop
+application/x-extension-htm=firefox-esr.desktop
+application/x-extension-html=firefox-esr.desktop
+application/x-extension-shtml=firefox-esr.desktop
+application/xhtml+xml=firefox-esr.desktop
+application/x-extension-xhtml=firefox-esr.desktop
+application/x-extension-xht=firefox-esr.desktop
 
 [Added Associations]
-x-scheme-handler/http=xfce4-web-browser.desktop;
-x-scheme-handler/https=xfce4-web-browser.desktop;
-application/pdf=org.kde.okular.desktop;
-text/html=firefox-esr.desktop;vim.desktop;com.brave.Browser.desktop;
-image/png=display-im7.q16.desktop;org.xfce.ristretto.desktop;
+x-scheme-handler/http=firefox-esr.desktop;xfce4-web-browser.desktop;
+x-scheme-handler/https=firefox-esr.desktop;xfce4-web-browser.desktop;
+application/pdf=org.kde.okular.desktop;atril.desktop;
+text/html=vim.desktop;firefox-esr.desktop;com.brave.Browser.desktop;
+image/png=org.xfce.ristretto.desktop;display-im7.q16.desktop;
 application/x-zerosize=org.xfce.ristretto.desktop;
 video/mp4=vlc.desktop;
+x-scheme-handler/chrome=firefox-esr.desktop;
+application/x-extension-htm=firefox-esr.desktop;
+application/x-extension-html=firefox-esr.desktop;
+application/x-extension-shtml=firefox-esr.desktop;
+application/xhtml+xml=firefox-esr.desktop;
+application/x-extension-xhtml=firefox-esr.desktop;
+application/x-extension-xht=firefox-esr.desktop;
+image/jpeg=org.xfce.ristretto.desktop;
+text/javascript=vim.desktop;
+image/svg+xml=org.xfce.ristretto.desktop;

@@ -45,3 +45,11 @@ xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+
+# Android SDK Caches
+.android/cache/
+
+# Local CLI/Node configs & user settings
+create-next-app-nodejs/config.json
+eas-cli-nodejs/user-settings.json
+nextjs-nodejs/config.json

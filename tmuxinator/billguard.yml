@@ -8,20 +8,20 @@ windows:
   - frontend:
       layout: main-pane
       panes:
-        - cd frontend && npx expo start --web
+        - fuser -k 8081/tcp || true; cd frontend && npm start
   - backend:
       layout: main-pane
       panes:
-        - cd backend && docker compose up -d db redis && source .venv/bin/activate && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-  - backendtests:
-      layout: main-pane
-      panes:
-        - cd backend && source .venv/bin/activate && PYTHONPATH=. pytest tests/ -v
+        - fuser -k 8000/tcp || true; cd backend && docker compose up -d db redis && source .venv/bin/activate && PYTHONUNBUFFERED=1 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000  # - backendtests:
+  #     layout: main-pane
+  #     panes:
+  #       - cd backend && source .venv/bin/activate && PYTHONPATH=. pytest tests/ -v
   - celery:
       layout: main-pane
       panes:
-        - cd backend && source .venv/bin/activate && celery -A app.workers.celery_app worker --loglevel=info
-  - opencode:
-      layout: main-pane
-      panes:
-        - opencode -s ses_1198b93a1ffeaH3ewtz1BG4V3t
+        - pkill -f "celery" || true; cd backend && source .venv/bin/activate &&  celery -A app.workers.celery_app worker --loglevel=info -P solo --without-gossip --without-mingle --without-heartbeat
+
+  # - opencode:
+  #     layout: main-pane
+  #     panes:
+  #       - opencode -s ses_1151ef551ffeHRRYmD9uokG1md

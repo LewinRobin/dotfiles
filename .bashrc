@@ -130,7 +130,7 @@ export NVM_DIR="$HOME/.nvm"
 
  
 # Set Java 21 as the default for builds
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 export ANDROID_HOME=$HOME/Android/Sdk
