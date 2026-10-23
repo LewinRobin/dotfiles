@@ -120,9 +120,10 @@ fi
 # alias codefile="cd /media/iiab-admin/C298879E98879019/OneDrive/codefile"
 alias codefile="cd /mnt/E/codefile"
 alias codefilec="cd /media/iiab-admin/OS/Users/jebin/Documents/Codefile"
-alias myclock="cd ~/clock && ~/clock/clock"
+alias minuteClock="cd ~/clock && ~/clock/clock"
+alias textClock="cd ~/text-clock && ~/text-clock/text-clock"
 alias shifter="open /mnt/E/codefile/Js/Me/Shifter/index.html"
-alias scheduler="open '/mnt/E/codefile/Js/Me/Scheduler web 2/index.html'"
+alias scheduler="open '/mnt/E/codefile/Js/Me/Scheduler web 3/index.html'"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
